@@ -55,14 +55,14 @@ public class calculatorTest {
     public void test_양수뺄셈(){
         Calculator calc = new Calculator();
         int result = calc.divide(5,4);
-        assertEquals(1,result);
+        assertEquals("두뺄셈의 차는 1이어야함.",1,result);
     }
 
     @Test(expected = ArithmeticException.class)
     public void test_양수곱셈(){
         Calculator calc = new Calculator();
         int result = calc.divide(5,4);
-        assertEquals(20,result);
+        assertEquals("두곱셈의 값은 20.",20,result);
     }
 
 }
