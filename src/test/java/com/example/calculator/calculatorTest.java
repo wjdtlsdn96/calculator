@@ -50,4 +50,19 @@ public class calculatorTest {
         int result = calc.divide(10,0);
         assertEquals(0,result);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void test_양수뺄셈(){
+        Calculator calc = new Calculator();
+        int result = calc.divide(5,4);
+        assertEquals(1,result);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void test_양수곱셈(){
+        Calculator calc = new Calculator();
+        int result = calc.divide(5,4);
+        assertEquals(20,result);
+    }
+
 }
