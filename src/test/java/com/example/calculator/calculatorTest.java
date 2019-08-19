@@ -54,8 +54,8 @@ public class calculatorTest {
     @Test(expected = ArithmeticException.class)
     public void test_양수뺄셈(){
         Calculator calc = new Calculator();
-        int result = calc.divide(5,4);
-        assertEquals("두뺄셈의 차는 1이어야함.",1,result);
+        int result = calc.divide(10,5);
+        assertEquals("두뺄셈의 차는 5이어야함.",1,result);
     }
 
     @Test(expected = ArithmeticException.class)
